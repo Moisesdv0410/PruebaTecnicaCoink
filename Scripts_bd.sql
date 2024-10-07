@@ -39,3 +39,29 @@ VALUES ('Antioquia', 1), ('Cundinamarca', 1), ('Buenos Aires', 2);
 
 INSERT INTO municipios (nombre_municipio, id_departamento)
 VALUES ('Medellín', 1), ('Bogotá', 2), ('La Plata', 3);
+
+-- Stored procedures
+CREATE OR REPLACE PROCEDURE sp_insertarusuario(
+    IN p_nombre_usuario VARCHAR(100),
+    IN p_telefono VARCHAR(15),
+    IN p_direccion VARCHAR(255),
+    IN p_id_pais INT,
+    IN p_id_departamento INT,
+    IN p_id_municipio INT
+)
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    -- Insertar un usuario en la tabla 'usuarios'
+    INSERT INTO usuarios (nombre_usuario, telefono, direccion, id_pais, id_departamento, id_municipio)
+    VALUES (p_nombre_usuario, p_telefono, p_direccion, p_id_pais, p_id_departamento, p_id_municipio);
+END;
+$$;
+
+--consultar stored procedures
+SELECT proname, proargnames 
+FROM pg_proc 
+WHERE proname = 'sp_insertarusuario';
+
+-- insert stored procedures
+CALL sp_insertarusuario('Juan Perez', '123456789', 'Calle 123', 1,2,3);
