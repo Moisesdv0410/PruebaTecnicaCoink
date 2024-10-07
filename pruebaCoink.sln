@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pruebaCoink", "pruebaCoink\pruebaCoink.csproj", "{596191BB-0CFB-4412-9906-03C6219A28FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{596191BB-0CFB-4412-9906-03C6219A28FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{596191BB-0CFB-4412-9906-03C6219A28FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{596191BB-0CFB-4412-9906-03C6219A28FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{596191BB-0CFB-4412-9906-03C6219A28FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F81E7335-38DE-430B-86E3-735942D6B645}
+	EndGlobalSection
+EndGlobal
